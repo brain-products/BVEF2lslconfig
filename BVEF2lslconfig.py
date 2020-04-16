@@ -23,11 +23,11 @@ for electrode in bv_root.findall('Electrode'):
 	electrode_names.append(electrode.find('Name').text)
 
 for n in electrode_names:
-	if n is 'GND':
+	if n == 'GND':
 		electrode_names.remove('GND')
 		break
 for n in electrode_names:
-	if n is 'REF':
+	if n == 'REF':
 		electrode_names.remove('REF')
 
 for n in electrode_names:
