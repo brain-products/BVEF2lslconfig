@@ -13,7 +13,7 @@ bvefin_name = sys.argv[1]
 configin_name = sys.argv[2]
 num_args = len(sys.argv)
 if num_args is 4:
-	if sys.argv[3] == 'True':
+	if sys.argv[3] == 'XML':
 		is_conf_XML = True
 	else:
 		is_conf_XML = False
